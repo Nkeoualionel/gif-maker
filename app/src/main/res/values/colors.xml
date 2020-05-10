@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E42211</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#A3071D</color>
+    <color name="background_button">#72081C</color>
+
+    <color name="select">#b9000000</color>
+
+    <!-- Theme Color -->
+
+    <color name="blue_theme">#F05265</color>
+
+
+    <!--Difine Colors-->
+    <color name="Black">#212121</color>
+
+    <color name="Gray">#e3e6e8</color>
+
+    <!--    Extra Color-->
+
+    <color name="gray">#b4b4b4</color>
+    <color name="text_color">#a6a6a6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#212121</color>
+    <color name="original_black">#000000</color>
+    <color name="black_transfer">#f5212121</color>
+
+
+
+
+</resources>

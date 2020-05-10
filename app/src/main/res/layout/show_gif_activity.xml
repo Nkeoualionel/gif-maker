@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/customtoolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgGif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="#000"
+                    android:scaleType="centerInside"
+                     />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/frameLoader"
+                    android:visibility="gone"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/imgThumbline"
+                        android:alpha="0.9"
+                        android:background="@color/select"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rect_load" />\
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/imgGifCircle"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/my_gif_text"
+                        android:alpha="1.8"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"/>
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Please wait..."
+                        android:textSize="10sp"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+
+
+
+    </LinearLayout>
+    <include layout="@layout/layout_share"/>
+
+   <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ads"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>

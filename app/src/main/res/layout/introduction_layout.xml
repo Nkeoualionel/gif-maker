@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lnvInstruction"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="match_parent">
+
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:tint="@color/colorPrimary"
+               android:src="@drawable/icon_step"/>
+
+
+           <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+               android:layout_width="wrap_content"
+               android:padding="@dimen/_5sdp"
+               android:textAlignment="center"
+               android:textSize="12sp"
+               android:layout_height="wrap_content"
+               android:text="Choose picture forme gallery"/>
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:tint="@color/colorPrimary"
+               android:src="@drawable/icon_plus"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:tint="@color/colorPrimary"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_done"/>
+
+
+           <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+               android:layout_width="wrap_content"
+               android:padding="@dimen/_5sdp"
+               android:textAlignment="center"
+               android:textSize="12sp"
+               android:layout_height="wrap_content"
+               android:text="Play with duration "/>
+           </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:tint="@color/colorPrimary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:rotation="90"
+               android:src="@drawable/icon_eqal"/>
+
+
+
+           </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:tint="@color/colorPrimary"
+               android:src="@drawable/icon_fiile"/>
+
+
+           <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+               android:layout_width="wrap_content"
+               android:padding="@dimen/_5sdp"
+               android:textSize="12sp"
+               android:layout_height="wrap_content"
+               android:text="GIF"/>
+       </LinearLayout>
+
+       </LinearLayout>
+</LinearLayout>

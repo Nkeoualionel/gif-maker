@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/customtoolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin03"
+                android:padding="@dimen/margin03"
+                android:text="GIF SETTINGS"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <LinearLayout
+                android:id="@+id/lnvSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin03"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_size" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Size of Gif output"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <TextView
+                        android:id="@+id/txtMaxSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="Max 450 pixel"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_frame" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Max frame of GIF"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <TextView
+                        android:id="@+id/txtMaxFrame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="150 frame. The more of number of frame slower processing."
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/seekBarFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lnvmAxframe"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_open_black_24dp"
+                    android:tint="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.CustomText.TextMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Folder Save"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <com.lionelnkeoua.gifmaker.CustomText.TextMedium
+                        android:id="@+id/txtFolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="/storage/emulated/0/VmgGifMaker"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+
+
+            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:id="@+id/lnvLangue"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:tint="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_language_black_24dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Privace policy"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="Policy"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:id="@+id/lnvWebsite"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_black_24dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Twitter of Developer"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="Check out over twitter."
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_feedback_black_24dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnvFeedBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Me"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="Tell me all you want about this application."
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnvShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/Black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="Tell your friends about this application."
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_update_black_24dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnvVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Check Update"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:id="@+id/txtVersion"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="V1.0"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin05"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_android_black_24dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnvApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin10">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My other apps"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+                        android:id="@+id/txtApp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:text="See or download my apps"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/margin03"
+                        android:background="@color/Gray" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_gravity="bottom"
+        android:textSize="10sp"
+        android:gravity="bottom"
+        android:padding="@dimen/margin05"
+        android:layout_height="wrap_content"
+        android:text="The rights for all trademarks, images, videos and logos belong to its exclusive owners. They are being used on this site for reference purpose only."/>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ads"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>

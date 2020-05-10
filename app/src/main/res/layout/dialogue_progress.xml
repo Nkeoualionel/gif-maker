@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/black_transfer"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:tint="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_loader"
+        android:id="@+id/imgLoader"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+        <com.github.lzyzsd.circleprogress.CircleProgress
+            android:id="@+id/circle_progress"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            custom:circle_progress="0"
+            custom:circle_text_color="@color/white"
+            custom:circle_max="100"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="0"
+        android:layout_margin="@dimen/margin20"
+        android:layout_height="wrap_content" />
+
+
+    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:textSize="18sp"
+        android:padding="@dimen/margin10"
+        android:textColor="@color/white"
+        android:text="PLEASE WAIT..."
+        android:layout_height="wrap_content" />
+
+    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:textSize="18sp"
+        android:id="@+id/txtStatus"
+        android:textColor="@color/white"
+        android:text="YOUR GIF IS BEING CREATED"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

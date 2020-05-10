@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:gravity="center"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+            style="@style/home_text_home"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:text=" create online animated gif file freely  "/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/lnvCreateGIF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/home_image"
+                        android:src="@drawable/create_gifxxhdpi" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        style="@style/home_text"
+                        android:text="CREATE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lnvMyGIF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/home_image"
+                        android:src="@drawable/my_gifxxhdpi" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        style="@style/home_text"
+                        android:text="MY GIF" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lnvSerchGIF"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/home_image"
+                        android:src="@drawable/giphy_gifxxxhdpi" />
+
+                    <com.lionelnkeoua.gifmaker.CustomText.TextMediumBold
+                        style="@style/home_text"
+                        android:text="SEARCH GIF" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lnvSetting"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/home_image"
+                        android:src="@drawable/settingsxxhdpi" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        style="@style/home_text"
+                        android:text="SETTINGS" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+          <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_ads"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

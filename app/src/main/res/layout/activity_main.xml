@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.lionelnkeoua.gifmaker.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/customtoolbar" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <include layout="@layout/introduction_layout"/>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_3sdp"
+                android:visibility="gone"
+                android:id="@+id/lnvController"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_3sdp"
+                android:id="@+id/lnvCommonAll"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="Set Default Duration"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:max="3000" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        android:id="@+id/txtDurationAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="Set inidividual Duration"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+
+
+                    <SeekBar
+                        android:id="@+id/seekbarDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:max="3000" />
+
+                    <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                        android:id="@+id/txtDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+              <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adSize="SMART_BANNER"
+                    ads:adUnitId="@string/banner_ads"></com.google.android.gms.ads.AdView>
+            <LinearLayout
+                android:id="@+id/lnvCreateGIF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_button"
+                android:gravity="center"
+                android:orientation="vertical">
+            <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:id="@+id/txtLetsFun"
+                    android:text="LET'S FUN"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

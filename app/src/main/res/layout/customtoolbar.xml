@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    android:background="@color/colorPrimary"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:id="@+id/imgBack"
+            android:tint="@color/white"
+            android:paddingLeft="@dimen/_10sdp"
+            android:src="@drawable/icon_back"/>
+
+
+            <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:layout_margin="@dimen/_5sdp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="VMG GIF "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                 />
+
+        <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+            android:id="@+id/txtNext"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_margin="@dimen/margin03"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:background="@drawable/rect_nextt"
+            android:text="Next"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingRight="@dimen/_15sdp"
+            android:id="@+id/imgSettings"
+            android:tint="@color/white"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_setting"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/_15sdp"
+            android:id="@+id/imgMyGIF"
+            android:tint="@color/colorPrimary"
+            android:layout_margin="@dimen/_3sdp"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_gallery"/>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/_15sdp"
+            android:id="@+id/imgAdd"
+            android:visibility="gone"
+            android:tint="@color/colorPrimary"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_add"/>
+
+
+    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+
+
+

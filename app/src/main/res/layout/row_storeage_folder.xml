@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imgSd"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/margin05"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.lionelnkeoua.gifmaker.myCustomText.TextsMediumBold
+            android:id="@+id/txtFolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:padding="@dimen/margin03"
+            android:singleLine="true"
+            android:text="Folder"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.lionelnkeoua.gifmaker.myCustomText.TextsMedium
+            android:id="@+id/txtSd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin03"
+            android:singleLine="true"
+            android:text="10"
+            android:textColor="@color/gray" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
